@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Studio Namma</title>
+  <meta name="description" content="What we do at Studio Namma.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <div id="page-curtain"></div>
+
+  <nav id="navbar">
+    <a href="../" class="nav-label">STUDIO NAMMA</a>
+    <div class="nav-right">
+      <button id="theme-toggle" class="nav-label" aria-label="Toggle theme">
+        <span id="theme-label">LIGHT MODE</span>
+      </button>
+      <button id="menu-btn" class="nav-label" aria-label="Open menu">MENU</button>
+      <a href="../#contact" class="nav-label nav-cta">LET'S TALK!</a>
+    </div>
+  </nav>
+
+  <div id="menu-overlay" role="dialog" aria-modal="true">
+    <div class="menu-header">
+      <a href="../" class="nav-label">STUDIO NAMMA</a>
+      <button id="menu-close" class="nav-label" aria-label="Close menu">CLOSE</button>
+    </div>
+    <nav class="menu-nav">
+      <a href="../" class="menu-nav-link" data-thumb="../assets/images/thumb-home.webp">HOME</a>
+      <a href="work.html" class="menu-nav-link" data-thumb="../assets/images/thumb-work.webp">WORK</a>
+      <a href="services.html" class="menu-nav-link" data-thumb="../assets/images/thumb-services.webp">SERVICES</a>
+      <a href="approach.html" class="menu-nav-link" data-thumb="../assets/images/thumb-approach.webp">APPROACH</a>
+    </nav>
+  </div>
+  <div id="menu-thumb"><img src="../assets/images/placeholder.webp" alt=""></div>
+
+  <section class="hero" style="min-height: 60vh;">
+    <p class="hero-label">WHAT WE DO</p>
+    <div class="hero-text-block">
+      <div class="hero-line-wrap"><span class="hero-line">OUR SERVICES</span></div>
+    </div>
+  </section>
+
+  <section class="services-section">
+    <div id="service-video-panel"><video muted loop playsinline></video></div>
+    <div class="services-list">
+      <div class="service-row" data-video="assets/videos/artdirection.webm">
+        <span class="service-name">Art Direction</span>
+        <span class="service-sub">Crafting visual narratives</span>
+      </div>
+      <div class="service-row" data-video="assets/videos/branding.webm">
+        <span class="service-name">Branding</span>
+        <span class="service-sub">Building iconic identities</span>
+      </div>
+      <div class="service-row" data-video="assets/videos/webdesign.webm">
+        <span class="service-name">Web Design</span>
+        <span class="service-sub">Digital experiences</span>
+      </div>
+      <div class="service-row" data-video="assets/videos/development.webm">
+        <span class="service-name">Development</span>
+        <span class="service-sub">Clean, scalable code</span>
+      </div>
+      <div class="service-row" data-video="assets/videos/motion.webm">
+        <span class="service-name">Motion Design</span>
+        <span class="service-sub">Animated storytelling</span>
+      </div>
+      <div class="service-row" data-video="assets/videos/photography.webm">
+        <span class="service-name">Photography</span>
+        <span class="service-sub">Visual content creation</span>
+      </div>
+      <div class="service-row" data-video="assets/videos/strategy.webm">
+        <span class="service-name">Strategy</span>
+        <span class="service-sub">Digital positioning</span>
+      </div>
+      <div class="service-row" data-video="assets/videos/social.webm">
+        <span class="service-name">Social Media</span>
+        <span class="service-sub">Content ecosystems</span>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <h2 class="footer-cta">NEED HELP?</h2>
+    <a href="mailto:hello@studionamma.com" class="footer-cta-btn">SAY HELLO →</a>
+    <nav class="footer-nav">
+      <a href="../" class="nav-label">HOME</a>
+      <a href="work.html" class="nav-label">WORK</a>
+      <a href="approach.html" class="nav-label">APPROACH</a>
+    </nav>
+    <p class="footer-copy">Copyright 2026 — STUDIO NAMMA</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>
