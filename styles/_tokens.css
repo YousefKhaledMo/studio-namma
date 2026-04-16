@@ -1,0 +1,48 @@
+:root {
+  --color-bg:           #0D0D0D;
+  --color-bg-alt:       #111111;
+  --color-surface:      #1A1A1A;
+  --color-text:         #E8E6E0;
+  --color-text-muted:   #888880;
+  --color-accent:       #1400FF;
+  --color-accent-hover: #3D2EFF;
+  --color-border:       rgba(232,230,224,0.12);
+  --color-white:        #FFFFFF;
+
+  --font-display:  'Barlow', sans-serif;
+  --font-body:     'Barlow', sans-serif;
+  --font-mono:     'JetBrains Mono', monospace;
+
+  --text-xs:    clamp(10px, 1.1vw, 12px);
+  --text-sm:    clamp(12px, 1.3vw, 14px);
+  --text-base:  clamp(15px, 1.5vw, 17px);
+  --text-hero:  clamp(72px, 12vw, 180px);
+  --text-menu:  clamp(56px, 10vw, 140px);
+
+  --space-xs:   4px;
+  --space-sm:   8px;
+  --space-md:   16px;
+  --space-lg:   32px;
+  --space-xl:   64px;
+  --space-2xl:  120px;
+
+  --ease-out-expo:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-expo:    cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-out-quart:  cubic-bezier(0.25, 1, 0.5, 1);
+  --dur-fast:  0.3s;
+  --dur-mid:   0.6s;
+  --dur-slow:  1.0s;
+
+  --nav-height:   60px;
+  --max-width:    1440px;
+  --gutter:       clamp(20px, 4vw, 60px);
+}
+
+html.light-mode {
+  --color-bg:         #F2F0EA;
+  --color-bg-alt:     #E8E6E0;
+  --color-surface:    #DDDBD5;
+  --color-text:       #0D0D0D;
+  --color-text-muted: #555550;
+  --color-border:     rgba(13,13,13,0.12);
+}

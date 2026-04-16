@@ -1,0 +1,38 @@
+* {
+  cursor: none !important;
+}
+
+#cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.25s var(--ease-out-quart),
+              height 0.25s var(--ease-out-quart),
+              background 0.25s,
+              border 0.25s;
+  will-change: transform;
+}
+
+#cursor-dot.is-hovering {
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: 2px solid var(--color-accent);
+}
+
+#cursor-dot.is-clicking {
+  transform: translate(-50%, -50%) scale(0.85);
+}
+
+@media (max-width: 768px) {
+  #cursor-dot {
+    display: none;
+  }
+}
