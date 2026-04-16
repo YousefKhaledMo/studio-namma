@@ -1,0 +1,15 @@
+{
+  "name": "studio-namma",
+  "version": "1.0.0",
+  "description": "Modular, phased, production-grade creative studio website inspired by Studio Namma",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "@studio-freight/lenis": "^1.0.42",
+    "split-type": "^0.3.4"
+  }
+}
